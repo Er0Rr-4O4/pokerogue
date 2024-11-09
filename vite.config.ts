@@ -1,3 +1,11 @@
+export default {
+  server: {
+    watch: {
+      usePolling: true,
+      interval: 1000,
+    },
+  },
+};
 import { defineConfig, loadEnv, Rollup, UserConfig } from 'vite';
 import tsconfigPaths from 'vite-tsconfig-paths';
 import { minifyJsonPlugin } from "./src/plugins/vite/vite-minify-json-plugin";
